@@ -1,3 +1,38 @@
+# ProjectSVR
+
+**ProjectSVR: Mapping single-cell RNA-seq data to reference atlases by support vector regression**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+---
+
+## 📖 Introduction
+
+ProjectSVR is an R package for reference mapping in single-cell RNA-seq analysis.  
+It formulates reference mapping as a regression problem, where support vector regression (SVR) models learn to project new query datasets into the low-dimensional embedding of a reference atlas.  
+
+Key features:
+
+- **Integration-agnostic:** Does not rely on the specific integration algorithm used to construct the atlas.  
+- **Robust feature engineering:** Uses meta-gene activity scoring to handle data sparsity and batch effects.  
+- **Flexible mapping:** Supports UMAP and pseudotime embeddings.  
+- **Extensible framework:** Can be applied across technologies, genotypes, and biological conditions.  
+
+---
+
+## 
+
+## ⚙️ Installation
+
+ProjectSVR can be installed directly from GitHub:
+
+# Install dependencies first
+install.packages(c("devtools", "e1071", "AUCell", "umap", "ggplot2", "Seurat"))
+
+# Install ProjectSVR
+devtools::install_github("JarningGau/ProjectSVR")
+
+
 
 # ProjectSVR <img src="man/figures/ProjectSVR-logo.png" align="right" width=80px/>
 
