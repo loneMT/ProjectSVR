@@ -45,7 +45,7 @@ devtools::install_github("JarningGau/ProjectSVR")
 
 The main dependencies are:
 
-- **R (≥ 4.0.0)**
+- R \>= 4.1
 - `e1071` – for Support Vector Regression
 - `AUCell` – for gene set scoring
 - `umap` – for dimensionality reduction
@@ -54,6 +54,36 @@ The main dependencies are:
 - Additional utilities: `dplyr`, `Matrix`, `cowplot`
 
 A full list of dependencies is included in the [`DESCRIPTION`](DESCRIPTION) file.  
+
+### External packages
+
+Install `AUCell` or `UCell` for signature score calculation.
+
+``` r
+## install UCell
+# R = 4.3
+BiocManager::install("UCell") # or
+# R < 4.3
+remotes::install_github("carmonalab/UCell", ref="v1.3")
+## install AUCell
+BiocManager::install("AUCell")
+```
+
+We provided a wrapper
+[`RunCNMF`](https://jarninggau.github.io/ProjectSVR/reference/RunCNMF.html)
+of python pacakge [`cnmf`](https://github.com/dylkot/cNMF) for feature
+selection. If you want to use it, you should install `cnmf` through
+`reticulate`.
+
+``` r
+install.packages("reticulate")
+reticulate::install_miniconda()
+## install sceasy for single cell data format transformation.
+devtools::install_github("cellgeni/sceasy")
+reticulate::py_install("anndata")
+## install cnmf package via reticulate
+reticulate::py_install("cnmf")
+```
 
 ## Related resources
 
@@ -146,40 +176,6 @@ annotation.
   prediction](https://jarninggau.github.io/ProjectSVR/articles/misc_disco_pbmc_svm.html)
 
 
-
-### Dependencies
-
-- R \>= 4.1
-
-### External packages
-
-Install `AUCell` or `UCell` for signature score calculation.
-
-``` r
-## install UCell
-# R = 4.3
-BiocManager::install("UCell") # or
-# R < 4.3
-remotes::install_github("carmonalab/UCell", ref="v1.3")
-## install AUCell
-BiocManager::install("AUCell")
-```
-
-We provided a wrapper
-[`RunCNMF`](https://jarninggau.github.io/ProjectSVR/reference/RunCNMF.html)
-of python pacakge [`cnmf`](https://github.com/dylkot/cNMF) for feature
-selection. If you want to use it, you should install `cnmf` through
-`reticulate`.
-
-``` r
-install.packages("reticulate")
-reticulate::install_miniconda()
-## install sceasy for single cell data format transformation.
-devtools::install_github("cellgeni/sceasy")
-reticulate::py_install("anndata")
-## install cnmf package via reticulate
-reticulate::py_install("cnmf")
-```
 
 ## Benchmark results
 
