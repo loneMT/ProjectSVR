@@ -2,8 +2,14 @@
 
 **ProjectSVR: Mapping single-cell RNA-seq data to reference atlases by support vector regression**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+# ProjectSVR <img src="man/figures/ProjectSVR-logo.png" align="right" width=80px/>
 
+[![](https://img.shields.io/badge/devel%20version-0.2.1-green.svg)](https://github.com/JarningGau/ProjectSVR)
+
+`ProjectSVR` is a machine learning-based algorithm for mapping the query
+cells onto well-constructed reference atlas.
+
+<img src="man/figures/ProjectSVR-workflow.png" width="600" />
 ---
 
 ## 📖 Introduction
@@ -34,14 +40,7 @@ devtools::install_github("JarningGau/ProjectSVR")
 
 
 
-# ProjectSVR <img src="man/figures/ProjectSVR-logo.png" align="right" width=80px/>
 
-[![](https://img.shields.io/badge/devel%20version-0.2.1-green.svg)](https://github.com/JarningGau/ProjectSVR)
-
-`ProjectSVR` is a machine learning-based algorithm for mapping the query
-cells onto well-constructed reference atlas.
-
-<img src="man/figures/ProjectSVR-workflow.png" width="600" />
 
 ## Related resources
 
