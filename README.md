@@ -2,7 +2,7 @@
 
 **ProjectSVR: Mapping single-cell RNA-seq data to reference atlases by support vector regression**
 
-# ProjectSVR <img src="man/figures/ProjectSVR-logo.png" align="right" width=80px/>
+# <img src="man/figures/ProjectSVR-logo.png" align="right" width=80px/>
 
 [![](https://img.shields.io/badge/devel%20version-0.2.1-green.svg)](https://github.com/JarningGau/ProjectSVR)
 
