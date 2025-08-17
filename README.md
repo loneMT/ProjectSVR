@@ -26,17 +26,32 @@ Key features:
 
 ## ⚙️ Installation
 
-ProjectSVR can be installed directly from GitHub:
+Install the development version from GitHub use:
 
-# Install dependencies first
-install.packages(c("devtools", "e1071", "AUCell", "umap", "ggplot2", "Seurat"))
+``` r
+install.packages("devtools")
+devtools::install_github("JarningGau/ProjectSVR")
+```
+
+`ProjectSVR` has been successfully installed and test on ubuntu, centOS
+and wsl2.
 
 # Install ProjectSVR
 devtools::install_github("JarningGau/ProjectSVR")
 
+## 📦 Dependencies
 
+The main dependencies are:
 
+- **R (≥ 4.0.0)**
+- `e1071` – for Support Vector Regression
+- `AUCell` – for gene set scoring
+- `umap` – for dimensionality reduction
+- `ggplot2` – for visualization
+- `Seurat` – for preprocessing scRNA-seq data
+- Additional utilities: `dplyr`, `Matrix`, `cowplot`
 
+A full list of dependencies is included in the [`DESCRIPTION`](DESCRIPTION) file.  
 
 ## Related resources
 
@@ -128,17 +143,7 @@ annotation.
 - [Training an ensemble SVM model for cell type
   prediction](https://jarninggau.github.io/ProjectSVR/articles/misc_disco_pbmc_svm.html)
 
-## Installation
 
-Install the development version from GitHub use:
-
-``` r
-install.packages("devtools")
-devtools::install_github("JarningGau/ProjectSVR")
-```
-
-`ProjectSVR` has been successfully installed and test on ubuntu, centOS
-and wsl2.
 
 ### Dependencies
 
