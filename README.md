@@ -10,7 +10,6 @@
 cells onto well-constructed reference atlas.
 
 <img src="man/figures/ProjectSVR-workflow.png" width="600" />
----
 
 ## 📖 Introduction
 
@@ -24,9 +23,6 @@ Key features:
 - **Flexible mapping:** Supports UMAP and pseudotime embeddings.  
 - **Extensible framework:** Can be applied across technologies, genotypes, and biological conditions.  
 
----
-
-## 
 
 ## ⚙️ Installation
 
