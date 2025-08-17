@@ -37,7 +37,9 @@ devtools::install_github("JarningGau/ProjectSVR")
 and wsl2.
 
 # Install ProjectSVR
+``` r
 devtools::install_github("JarningGau/ProjectSVR")
+```
 
 ## 📦 Dependencies
 
